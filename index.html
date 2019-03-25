@@ -5,7 +5,7 @@
     <title>Welcome to voila</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/Style.css" />
-    <script src="js/javascript.js" ></script>
+    <script async src="js/javascript.js" ></script>
 </head>
 
 <body>
@@ -15,20 +15,113 @@
                 <div class="logotype">
                     Voila
                 </div>
-                <nav class="header-menu">
-
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-item">Menu</li>
+                        <li class="menu-list-item">About</li>
+                        <li class="menu-list-item">Events</li>
+                        <li class="menu-list-item">Reservations</li>
+                        <li class="menu-list-item">Contact</li>
+                    </ul>
                 </nav>
+            </div>
+            <div class="header-description">
+                <h1>Welcome to voila</h1>
+                <span>We offer mouth watering French cuisine</span>
+                <div class="buttons-container">
+                    <input class="see-menu-button" id="see-menu-button" type="button"/>
+                    <input class="find-table-button" id="find-table-button" type="button"/>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll down for details</span>
+                <input class="scroll-down-button" id="scroll-down-button" type="button"/>
             </div>
         </header>
         <main class="main">
-            <div class="about">
-
+            <section class="about">
+                <section class="about-container">
+                    <h2>About Voila Restaurant</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat <span>nulla pariatur</span>.
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <input class="button-orange read-more-button" id="read-more-button" type="button" />
+                </div>
+                <div class="wine-image"></div>
+                <div class="chef-image"></div>
+                <div class="kitchen-image"></div>
+                <div class="meat-image"></div>
             </div>
-            <div class="menu-restourant">
-
+            <section class="menu-restourant">
+                <section class="restourant-container">
+                    <h2>Tasteful French Cuisine</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation. Duis
+                        aute irure dolor in <span>reprehenderit in voluptate</span> velit esse cillum dolore eu 
+                        fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium 
+                        voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, 
+                        obcaecati cupiditate non provident, <span>similique sunt</span> in culpa, qui officia deserunt mollitia animi, 
+                        id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                        Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, 
+                        quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                    </p>
+                    <input class="button-orange view-menu-button" id="view-menu-button" type="button"/>
+                </div>
+                <div class="meat-1"></div>
+                <div class="meat-2"></div>
+                <div class="cakes"></div>
             </div>
             <div class="reservations">
+                <section class="reservations-container">
+                    <h3>Make a Reservations</h3>
+                    <form class="reservations-form">
+                        <label for="reservations-field-name">Name</label>
+                        <input class="reservations-field-name" id="reservations-field-name" type="text" required/>
 
+                        <label for="reservations-field-date">Date</label>
+                        <input class="reservations-field-date" id="reservations-field-date" type="date" required/>
+
+                        <label for="reservations-field-time">Time</label>
+                        <input class="reservations-field-time" id="reservations-field-time" type="time" required/>
+
+                        <label for="reservations-field-commensals">Commensals</label>
+                        <input class="reservations-field-commensals" id="reservations-field-commensals" type="number" required/>
+
+                        <input class="reservation-button" id="reservation-button" type="button"/>
+                    </form>
+                </section>
+                <section class="upcoming-events-container">
+                    <h2>Upcoming Events</h2>
+                    <section class="event">
+                        <img class="event-image" src=""/>
+                        <div class="event-info">
+                            <header class="info-header">
+                                <h4>Live Music Fridays</h4>
+                                <span class="info-date">February 28th</span>
+                                <span class="info-time">6:00 PM</span>
+                            </header>
+                            <p>
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt 
+                                auctor a ornare odio non mauris.
+                            </p>
+                            <span>Read more</span>
+                        </div>
+                    </section>
+                </section>
             </div>
             <div class="pre-footer">
 
