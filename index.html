@@ -5,7 +5,7 @@
     <title>Welcome to voila</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/Style.css" />
-    <script async src="js/javascript.js" ></script>
+    <script async src="js/javascript.js"></script>
 </head>
 
 <body>
@@ -29,120 +29,145 @@
                 <h1>Welcome to voila</h1>
                 <span>We offer mouth watering French cuisine</span>
                 <div class="buttons-container">
-                    <input class="see-menu-button" id="see-menu-button" type="button"/>
-                    <input class="find-table-button" id="find-table-button" type="button"/>
+                    <button class="see-menu-button" id="see-menu-button" type="button">See Menu</button>
+                    <button class="find-table-button" id="find-table-button" type="button">Find a Table</button>
                 </div>
             </div>
             <div class="scroll-down">
                 <span>Scroll down for details</span>
-                <input class="scroll-down-button" id="scroll-down-button" type="button"/>
+                <button class="scroll-down-button" id="scroll-down-button" type="button"></button>
             </div>
         </header>
         <main class="main">
             <section class="about">
-                <section class="about-container">
+                <div class="about-container">
                     <h2>About Voila Restaurant</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat <span>nulla pariatur</span>.
                     </p>
                     <p>
-                        Excepteur sint occaecat cupidatat non proident, 
+                        Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <input class="button-orange read-more-button" id="read-more-button" type="button" />
+                    <button class="button-orange read-more-button" id="read-more-button" type="button">Read
+                        More</button>
                 </div>
                 <div class="wine-image"></div>
                 <div class="chef-image"></div>
                 <div class="kitchen-image"></div>
                 <div class="meat-image"></div>
+    </div>
+    <section class="menu-restourant">
+        <div class="restourant-container">
+            <h2>Tasteful French Cuisine</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation. Duis
+                aute irure dolor in <span>reprehenderit in voluptate</span> velit esse cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium
+                voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint,
+                obcaecati cupiditate non provident, <span>similique sunt</span> in culpa, qui officia deserunt mollitia
+                animi,
+                id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+            </p>
+            <button class="button-orange view-menu-button" id="view-menu-button" type="button">View Menu</button>
+        </div>
+        <div class="meat-1"></div>
+        <div class="meat-2"></div>
+        <div class="cakes"></div>
+    </section>
+    <section class="reservations">
+        <div class="reservations-container">
+            <h3>Make a Reservations</h3>
+            <form class="reservations-form">
+                <label for="reservations-field-name">Name</label>
+                <input class="reservations-field-name" id="reservations-field-name" type="text" required />
+
+                <label for="reservations-field-date">Date</label>
+                <input class="reservations-field-date" id="reservations-field-date" type="date" required />
+
+                <label for="reservations-field-time">Time</label>
+                <input class="reservations-field-time" id="reservations-field-time" type="time" required />
+
+                <label for="reservations-field-commensals">Commensals</label>
+                <input class="reservations-field-commensals" id="reservations-field-commensals" type="number"
+                    required />
+
+                <button class="reservation-button" id="reservation-button" type="button">Find a Table</button>
+            </form>
+    </section>
+    <section class="upcoming-events-container">
+        <h2>Upcoming Events</h2>
+        <section class="event">
+            <div class="event-image">
+                <img class="event-image" src="" />
             </div>
-            <section class="menu-restourant">
-                <section class="restourant-container">
-                    <h2>Tasteful French Cuisine</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation. Duis
-                        aute irure dolor in <span>reprehenderit in voluptate</span> velit esse cillum dolore eu 
-                        fugiat nulla pariatur.
-                    </p>
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium 
-                        voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, 
-                        obcaecati cupiditate non provident, <span>similique sunt</span> in culpa, qui officia deserunt mollitia animi, 
-                        id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-                        Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, 
-                        quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                    </p>
-                    <input class="button-orange view-menu-button" id="view-menu-button" type="button"/>
-                </div>
-                <div class="meat-1"></div>
-                <div class="meat-2"></div>
-                <div class="cakes"></div>
+            <div class="event-info">
+                <header class="info-header">
+                    <h4>Live Music Fridays</h4>
+                    <span class="info-date">February 28th</span>
+                    <span class="info-time">6:00 PM</span>
+                </header>
+                <p>
+                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                    auctor a ornare odio non mauris.
+                </p>
+                <span>Read more</span>
             </div>
-            <div class="reservations">
-                <section class="reservations-container">
-                    <h3>Make a Reservations</h3>
-                    <form class="reservations-form">
-                        <label for="reservations-field-name">Name</label>
-                        <input class="reservations-field-name" id="reservations-field-name" type="text" required/>
+        </section>
+    </section>
 
-                        <label for="reservations-field-date">Date</label>
-                        <input class="reservations-field-date" id="reservations-field-date" type="date" required/>
-
-                        <label for="reservations-field-time">Time</label>
-                        <input class="reservations-field-time" id="reservations-field-time" type="time" required/>
-
-                        <label for="reservations-field-commensals">Commensals</label>
-                        <input class="reservations-field-commensals" id="reservations-field-commensals" type="number" required/>
-
-                        <input class="reservation-button" id="reservation-button" type="button"/>
-                    </form>
-                </section>
-                <section class="upcoming-events-container">
-                    <h2>Upcoming Events</h2>
-                    <section class="event">
-                        <img class="event-image" src=""/>
-                        <div class="event-info">
-                            <header class="info-header">
-                                <h4>Live Music Fridays</h4>
-                                <span class="info-date">February 28th</span>
-                                <span class="info-time">6:00 PM</span>
-                            </header>
-                            <p>
-                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt 
-                                auctor a ornare odio non mauris.
-                            </p>
-                            <span>Read more</span>
-                        </div>
-                    </section>
-                </section>
+    <div class="pre-footer">
+        <div class="book-a-table">
+            <h3>Book a Table</h3>
+            <p>
+                Like our restaurant concept? Book a table and taste our dishes on first hand.
+            </p>
+            <button class="button-orange" id="book-a-table-button" type="button">Book a Table</button>
+        </div>
+        <div class="separator">
+            <span class="separator-text">Or</span>
+        </div>
+        <div class="tell-your-friends">
+            <h3>Tell to Your Friends</h3>
+            <p>
+                Some of your friends may like to visit if you recommend us. They'll trust your taste!
+            </p>
+            <div class="share-block">
+                <button class="share-button" id="facebook-share-button" type="button">Share</button>
+                <button class="share-button" id="tweeter-share-button" type="button">Tweet</button>
             </div>
-            <div class="pre-footer">
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="logotype">
+            Voila
+        </div>
+        <nav class="navigation">
+            
+        </nav>
+        <div class="us">
+            <div class="visit-us">
 
             </div>
-        </main>
-        <footer class="footer">
-            <div class="logotype">
-                Voila
-            </div>
-            <nav class="navigation">
+            <div class="connect-us">
 
-            </nav>
-            <div class="us">
-                <div class="visit-us">
-
-                </div>
-                <div class="connect-us">
-                    
-                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
 
