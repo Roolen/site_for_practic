@@ -34,6 +34,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato_regular.ttf);
+    font-style: normal;
+}
+
 
 body {
     margin: 0;
@@ -51,11 +57,25 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: PTSerif-Bold;
+    font-size: 22px;
+    color: #3b3b3b;
+    text-align: center;
+}
+
 .page {
 
 }
 
-/*Header*/
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+/*------Header------*/
 
 .header {
     width: 100%;
@@ -98,9 +118,7 @@ h2 {
     color: #ff6633;
 }
 
-.menu {
-    
-}
+/*------Main Menu------*/
 
 .menu-list {
     display: flex;
@@ -134,6 +152,8 @@ h2 {
     font-size: 13px;
     font-style: italic;
 }
+
+/*------Header Description------*/
 
 .header-description {
     margin-top: 130px;
@@ -247,7 +267,7 @@ h2 {
     font-size: 22px;
 }
 
-/*Main*/
+/*------Main------*/
 
 .main section:nth-child(2n+1) {
     background-color: #f7f7f7;
@@ -256,6 +276,8 @@ h2 {
 .main section:nth-child(2n) {
     background-color: #ffffff;
 }
+
+/*------About------*/
 
 .about {
     box-sizing: border-box;
@@ -330,6 +352,8 @@ h2 {
     background-size: cover;
 }
 
+/*------Menu Restaurant------*/
+
 .menu-restaurant {
     box-sizing: border-box;
     padding-top: 120px;
@@ -393,4 +417,90 @@ h2 {
     background-image: url(../image/Cakes.jpg);
     background-position: center -60px;
     background-size: cover;
+}
+
+/*------Reservation Section------*/
+
+.reservation {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 100%;
+    height: 845px;
+}
+
+.reservation-block {
+    width: 455px;
+    height: 600px;
+    background-color: #ffffff;
+
+    box-shadow:0px 6px 18px 0px rgba(57,50,50,0.31);
+    -webkit-box-shadow:0px 6px 18px 0px rgba(57,50,50,0.31);
+    -moz-box-shadow:0px 6px 18px 0px rgba(57,50,50,0.31);
+}
+
+.reservation-block:first-child {
+    margin-right: 30px;
+}
+
+/*------Reservation Container------*/
+
+.reservation-container {
+    padding: 70px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.reservation-form input {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 310px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e4e4;
+    border-radius: 3px;
+}
+
+.reservation-form input:focus + label {
+    display: none;
+}
+
+.reservation-field-block {
+    position: relative;
+}
+
+.reservation-label {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #555555;
+    cursor: text;
+}
+
+.reservation-label::after {
+    content: "*";
+}
+
+.reservation-button {
+    margin-top: 10px;
+    width: 310px;
+    height: 50px;
+    font-family: PTSans-Bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #222222;
+    border: 1px solid #222222;
+    border-radius: 3px;
+    text-transform: uppercase;
 }

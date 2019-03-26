@@ -110,46 +110,57 @@
                     </div>
                 </div>
             </section>
-            <section class="reservations">
-                <div class="reservations-container">
-                    <h3>Make a Reservations</h3>
-                    <form class="reservations-form">
-                        <label for="reservations-field-name">Name</label>
-                        <input class="reservations-field-name" id="reservations-field-name" type="text" required />
+            <section class="reservation">
+                <div class="reservation-block">
+                    <div class="reservation-container">
+                        <h3>Make a Reservation</h3>
+                        <form class="reservation-form">
+                            <div class="reservation-field-block">
+                                <input class="reservation-field" id="reservations-field-name" type="text" required />
+                                <label class="reservation-label" for="reservations-field-name">Name</label>
+                            </div>
 
-                        <label for="reservations-field-date">Date</label>
-                        <input class="reservations-field-date" id="reservations-field-date" type="date" required />
+                            <div class="reservation-field-block">
+                                <input class="reservation-field" id="reservations-field-date" type="text" required />
+                                <label class="reservation-label" for="reservations-field-date">Date</label>
+                            </div>
 
-                        <label for="reservations-field-time">Time</label>
-                        <input class="reservations-field-time" id="reservations-field-time" type="time" required />
+                            <div class="reservation-field-block">
+                                <input class="reservation-field" id="reservations-field-time" type="text" required />
+                                <label class="reservation-label" for="reservations-field-time">Time</label>
+                            </div>
 
-                        <label for="reservations-field-commensals">Commensals</label>
-                        <input class="reservations-field-commensals" id="reservations-field-commensals" type="number"
-                            required />
+                            <div class="reservation-field-block">
+                                <input class="reservation-field" id="reservations-field-commensals"
+                                type="number" required />
+                                <label class="reservation-label" for="reservations-field-commensals">Commensals</label>
+                            </div>
 
-                        <button class="reservation-button" id="reservation-button" type="button">Find a
-                            Table</button>
-                    </form>
-            </section>
-            <section class="upcoming-events-container">
-                <h2>Upcoming Events</h2>
-                <section class="event">
-                    <div class="event-image">
-                        <img class="event-image" src="" />
+                            <button class="reservation-button" id="reservation-button" type="button">Find a
+                                Table</button>
+                        </form>
+                        </div>
                     </div>
-                    <div class="event-info">
-                        <header class="info-header">
-                            <h4>Live Music Fridays</h4>
-                            <span class="info-date">February 28th</span>
-                            <span class="info-time">6:00 PM</span>
-                        </header>
-                        <p>
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
-                            auctor a ornare odio non mauris.
-                        </p>
-                        <span>Read more</span>
-                    </div>
-                </section>
+                <aside class="reservation-block upcoming-events-container">
+                    <h3>Upcoming Events</h2>
+                    <section class="event">
+                        <div class="event-image">
+                            <img class="event-image" src="" />
+                        </div>
+                        <div class="event-info">
+                            <header class="info-header">
+                                <h4>Live Music Fridays</h4>
+                                <span class="info-date">February 28th</span>
+                                <span class="info-time">6:00 PM</span>
+                            </header>
+                            <p>
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                                auctor a ornare odio non mauris.
+                            </p>
+                            <span>Read more</span>
+                        </div>
+                    </section>
+                </aside>
             </section>
 
             <div class="pre-footer">
