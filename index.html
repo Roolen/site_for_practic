@@ -4,7 +4,7 @@
 <head>
     <title>Welcome to voila</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/Style.css">
     <script async src="js/javascript.js"></script>
 </head>
 
@@ -13,15 +13,30 @@
         <header class="header">
             <div class="header-top-panel">
                 <div class="logotype">
-                    Voila
+                    Voilà
                 </div>
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li class="menu-list-item">Menu</li>
-                        <li class="menu-list-item">About</li>
-                        <li class="menu-list-item">Events</li>
-                        <li class="menu-list-item">Reservations</li>
-                        <li class="menu-list-item">Contact</li>
+                        <li class="menu-list-item">
+                            <a href="#">Menu</a>
+                            <div>Sit amet constetur adipisicing elit. Fugit perspiciatis.</div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#">About</a>
+                            <div>Adipisicing elit. Fugit pipsam ratione numquam</div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#">Event</a>
+                            <div>Ratione numquam lorem ipsum dolor sit amet tetur.</div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#">Reservations</a>
+                            <div>Voluptates animi cupiditate similique sint.</div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#">Contact</a>
+                            <div>Quis nemo odio saepe ullam vitae officiis delectus.</div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -29,13 +44,13 @@
                 <h1>Welcome to voila</h1>
                 <span>We offer mouth watering French cuisine</span>
                 <div class="buttons-container">
-                    <button class="see-menu-button" id="see-menu-button" type="button">See Menu</button>
-                    <button class="find-table-button" id="find-table-button" type="button">Find a Table</button>
+                    <button class="button-orange" id="see-menu-button" type="button">See Menu</button>
+                    <button class="find-table-button" id="find-table-button" type="button"><span>Find a Table</span></button>
                 </div>
             </div>
             <div class="scroll-down">
-                <span>Scroll down for details</span>
-                <button class="scroll-down-button" id="scroll-down-button" type="button"></button>
+                <p>Scroll down for details</p>
+                <a class="scroll-down-button">↓</a>
             </div>
         </header>
         <main class="main">
@@ -139,14 +154,16 @@
         <div class="separator">
             <span class="separator-text">Or</span>
         </div>
-        <div class="tell-your-friends">
-            <h3>Tell to Your Friends</h3>
-            <p>
-                Some of your friends may like to visit if you recommend us. They'll trust your taste!
-            </p>
-            <div class="share-block">
-                <button class="share-button" id="facebook-share-button" type="button">Share</button>
-                <button class="share-button" id="tweeter-share-button" type="button">Tweet</button>
+        <div class="tell-your-friends-conteiner">
+            <div class="tell-your-friends">
+                <h3>Tell to Your Friends</h3>
+                <p>
+                    Some of your friends may like to visit if you recommend us. They'll trust your taste!
+                </p>
+                <div class="share-block">
+                    <button class="share-button" id="facebook-share-button" type="button">Share</button>
+                    <button class="share-button" id="tweeter-share-button" type="button">Tweet</button>
+                </div>
             </div>
         </div>
     </div>
@@ -157,14 +174,28 @@
             Voila
         </div>
         <nav class="navigation">
-            
+            <span>Navigation</span>
+            <ul class="navigation-list">
+                <li class="navigation-list-item"><a href="#">Menu</a></li>
+                <li class="navigation-list-item"><a href="#">About</a></li>
+                <li class="navigation-list-item"><a href="#">Events</a></li>
+                <li class="navigation-list-item"><a href="#">Reservations</a></li>
+                <li class="navigation-list-item"><a href="#">Contact</a></li>
+            </ul>
         </nav>
         <div class="us">
             <div class="visit-us">
-
+                <span class="visit-us-head">Visit us</span>
+                <p>
+                    Nec sagittis sem nibh id elit. Duis sed odio sit amet nibh. <span>View on the map.</span>
+                </p>
             </div>
             <div class="connect-us">
-
+                <span class="connect-us-head">Connect with us</span>
+                <div class="connect-button-facebook"><a href="#"></a></div>
+                <div class="connect-button-twiteer"><a href="#"></a></div>
+                <div class="connect-button-instagram"><a href="#"></a></div>
+                <div class="connect-button-more"><a href="#"></a></div>
             </div>
         </div>
     </footer>
