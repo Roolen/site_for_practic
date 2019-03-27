@@ -433,6 +433,7 @@ h3 {
 }
 
 .reservation-block {
+    box-sizing: border-box;
     width: 455px;
     height: 600px;
     background-color: #ffffff;
@@ -503,4 +504,186 @@ h3 {
     border: 1px solid #222222;
     border-radius: 3px;
     text-transform: uppercase;
+}
+
+/*------Events Container------*/
+
+.upcoming-events-container {
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.reservation .upcoming-events-container section {
+    background-color: #ffffff;
+}
+
+.event {
+    display: flex;
+}
+
+.event:nth-child(n+1) {
+    margin-top: 20px;
+}
+
+.event-image {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.event-image-previw {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.info-header h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: PTSerif-Bold;
+    font-size: 16px;
+    color: #ff6633;
+}
+
+.event-info .info-header span {
+    font-family: PTSans-Bold;
+    font-size: 12px;
+    color: #3b3b3b;
+}
+
+.event-info p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: PTSans-Regular;
+    font-size: 14px;
+    color: #3b3b3b;
+    line-height: 20px;
+}
+
+.event-info span {
+    font-family: PTSans-Italic;
+    font-size: 14px;
+    color: #ff6633;
+}
+
+/*------Pre-Footer------*/
+
+.pre-footer {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 420px;
+}
+
+.book-a-table {
+    width: 300px;
+    height: 200px;
+}
+
+.book-a-table p {
+    font-family: PTSans-Regular;
+    font-size: 16px;
+    color: #5b5b5b;
+    line-height: 24px;
+    text-align: center;
+}
+
+.book-a-table button {
+    margin-left: 70px;
+}
+
+.separator {
+    margin-left: 70px;
+    margin-right: 70px;
+    position: relative;
+    width: 40px;
+    height: 200px;
+}
+
+.separator-text-block {
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.separator-text-block::before {
+    content: "";
+    display: block;
+    height: 65px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    border-right: 1px solid #9a9999;
+    box-shadow: 0 1px 1px 0 rgba(51, 45, 45, 0.274);
+}
+
+.separator-text-block::after {
+    content: "";
+    display: block;
+    height: 65px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    border-right: 1px solid #9a9999;
+    box-shadow: 0 1px 1px 0 rgba(51, 45, 45, 0.274);
+}
+
+.separator-text {
+    font-family: Lato-Regular;
+    font-size: 24px;
+    color: #9a9999;
+}
+
+.tell-your-friends-conteiner {
+    width: 300px;
+    height: 200px;
+}
+
+.tell-your-friends-conteiner p {
+    font-family: PTSans-Regular;
+    font-size: 16px;
+    color: #5b5b5b;
+    line-height: 24px;
+    text-align: center;
+}
+
+.share-block {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+}
+
+.share-block button {
+    width: 60px;
+    height: 20px;
+    font-family: Myriad Pro;
+    font-size: 11px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.share-button-facebook {
+    
+    background-color: #3e59a5;
+    border: 1px solid #3e59a5;
+    border-radius: 3px;
+}
+
+.share-button-tweeter {
+    background-color: #1b95e0;
+    border: 1px solid #1b95e0;
+    border-radius: 3px;
 }
