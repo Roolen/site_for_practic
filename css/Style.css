@@ -149,8 +149,12 @@ input:focus:-ms-input-placeholder {opacity: 0;}
 .logotype {
     width: 90px;
     height: 30px;
+}
+
+.logotype a {
     font-family: PTSerif-Bold, sans-serif;
     font-size: 36px;
+    text-decoration: none;
     color: #ff6633;
 }
 
