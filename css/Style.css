@@ -687,3 +687,118 @@ h3 {
     border: 1px solid #1b95e0;
     border-radius: 3px;
 }
+
+/*------Footer------*/
+
+.footer {
+    box-sizing: border-box;
+    padding: 50px 0;
+    width: 100%;
+    height: 300px;
+    background-color: #222222;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 920px;
+    min-height: 190px;
+}
+
+/*------Header Logotype------*/
+
+.logotype {
+    width: 90px;
+    height: 30px;
+    font-family: PTSerif-Bold, sans-serif;
+    font-size: 36px;
+    color: #ff6633;
+}
+
+/*------Navigation Menu------*/
+
+.navigation {
+    width: 130px;
+}
+
+.navigation span {
+    font-family: PTSerif-Bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navigation-list {
+    padding-left: 0;
+    font-family: PTSans-Regular;
+    font-size: 13px;
+    color: #ffffff;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.navigation-list-item:nth-child(n+1) {
+    margin-top: 15px;
+}
+
+.navigation-list-item a {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+/*------Us Block------*/
+
+.us {
+    width: 280px;
+}
+
+.visit-us-head {
+    font-family: PTSerif-Bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.visit-us p {
+    font-family: PTSans-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 21px;
+}
+
+.visit-us p a {
+    font-family: inherit;
+    color: #ff6633;
+    text-decoration: none;
+}
+
+.connect-us-head {
+    font-family: PTSerif-Bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.connect-button-container {
+    display: flex;
+    margin-top: 20px;
+    flex-shrink: 0;
+    vertical-align: bottom;
+}
+
+.connect-button-container a {
+    padding: 5px;
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.connect-button-container a:nth-child(n+2) {
+    margin-left: 20px;
+}
