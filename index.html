@@ -10,7 +10,7 @@
 
 <body>
     <div class="page">
-        <header class="header">
+        <header class="header" name="header">
             <div class="header-top-panel">
                 <div class="logotype">
                     <a href="#">Voila</a>
@@ -18,7 +18,7 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
-                            <a href="#">Menu</a>
+                            <a href="#menu-restaurant">Menu</a>
                             <div>Sit amet constetur adipisicing elit. Fugit perspiciatis.</div>
                         </li>
                         <li class="menu-list-item">
@@ -51,12 +51,13 @@
             </div>
             <div class="scroll-down">
                 <p>Scroll down for details</p>
-                <a class="scroll-down-button"></a>
+                <button class="scroll-down-button" id="scroll-down-button" type="button"></button>
             </div>
         </header>
         <main class="main">
             <section class="about">
-                <div class="about-container">
+                <a name="about"></a>
+                <div class="about-container" id="point_1">
                     <div class="about-content">
                         <h2>About Voila Restaurant</h2>
                         <p>
@@ -81,13 +82,14 @@
                 </div>
             </section>
             <section class="menu-restaurant">
+                <a name="menu-restaurant"></a>
                 <div class="menu-restaurant-container">
                     <div class="menu-restaurant-images">
                         <div class="meat-1"></div>
                         <div class="meat-2"></div>
                         <div class="cakes"></div>
                     </div>
-                    <div class="menu-restaurant-content">
+                    <div class="menu-restaurant-content" id="point_2">
                         <h2>Tasteful Italian Cuisine</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -110,8 +112,8 @@
                     </div>
                 </div>
             </section>
-            <section class="reservation">
-                <div class="reservation-block">
+            <section class="reservation" name="reservation">
+                <div class="reservation-block" id="point_3">
                     <div class="reservation-container">
                         <h3>Make a Reservation</h3>
                         <form class="reservation-form">
@@ -132,12 +134,10 @@
 
                             <div class="reservation-field-block">
                                 <label class="visually-hidden" for="reservations-field-commensals">Commensals</label>
-                                <input class="reservation-field" id="reservations-field-commensals" type="number" placeholder="Commensals*"
-                                    required />
+                                <input class="reservation-field" id="reservations-field-commensals" type="number" placeholder="Commensals*" required />
                             </div>
 
-                            <button class="reservation-button" id="reservation-button" type="button">Find a
-                                Table</button>
+                            <button class="reservation-button" id="reservation-button" type="submit">Find a Table</button>
                         </form>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                 </aside>
             </section>
 
-            <div class="pre-footer">
+            <div class="pre-footer" name="contact">
                 <div class="book-a-table">
                     <h3>Book a Table</h3>
                     <p>
