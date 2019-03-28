@@ -40,6 +40,17 @@
     font-style: normal;
 }
 
+/*------Selectors for motions------*/
+
+.move_top_100 {transform: translate3d(0, -100px, 0);}
+
+.move_left_100 {transform: translate3d(-100px, 0, 0);}
+
+.move_right_100 {transform: translate3d(100px, 0, 0);}
+
+.move_bottom_100 {transform: translate3d(0, 100px, 0);}
+
+/*------Standart Selectors------*/
 
 body {
     margin: 0;
@@ -99,6 +110,10 @@ input:focus::-webkit-input-placeholder {opacity: 0;}
 input:focus::-moz-placeholder {opacity: 0;}
 input:focus:-moz-placeholder {opacity: 0;}
 input:focus:-ms-input-placeholder {opacity: 0;}
+
+.shadow_image {
+    box-shadow:6px 6px 15px 0px rgba(57,50,50,0.31);
+}
 
 
 .visually-hidden {
@@ -426,18 +441,22 @@ input:focus:-ms-input-placeholder {opacity: 0;}
     height: 490px;
     position: absolute;
     top: -50px;
-    right: 0;
+    right: -100px;
     background-image: url(../image/Dining_wine_1.jpg);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 .chef-image {
     width: 535px;
     height: 360px;
     position: absolute;
-    top: 380px;
+    top: 480px;
     left: 0;
     background-image: url(../image/Dinner_1.jpg);
     background-size: cover;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 .kitchen-image {
@@ -445,10 +464,12 @@ input:focus:-ms-input-placeholder {opacity: 0;}
     height: 225px;
     position: absolute;
     top: 515px;
-    right: 270px;
+    right: 170px;
     background-image: url(../image/Pizza.jpg);
     background-position: center center;
     background-size: cover;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 .meat-image {
@@ -456,10 +477,12 @@ input:focus:-ms-input-placeholder {opacity: 0;}
     height: 225px;
     position: absolute;
     top: 515px;
-    right: 0;
+    right: -100px;
     background-image: url(../image/Dinner_2.jpg);
     background-position: center center;
     background-size: cover;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 /*------Menu Restaurant------*/
