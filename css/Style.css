@@ -100,9 +100,6 @@ input:focus::-moz-placeholder {opacity: 0;}
 input:focus:-moz-placeholder {opacity: 0;}
 input:focus:-ms-input-placeholder {opacity: 0;}
 
-.page {
-
-}
 
 .visually-hidden {
     width: 1px;
@@ -243,20 +240,54 @@ input:focus:-ms-input-placeholder {opacity: 0;}
 .button-orange {
     width: 160px;
     height: 50px;
+    position: relative;
+    border: none;
+    background: none;
+}
+
+.button-orange:before {
+    content: "";
+    display: block;
+    padding: 0;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #ff6633;
-    color: #ffffff;
-    font-family: PTSans-Bold;
-    font-size: 13px;
-    text-align: center;
     border: 1px solid #ff6633;
     border-radius: 5px;
-    text-transform: uppercase;
+    transition: opacity 0.3s ease-out 0s;
+    -webkit-transition: opacity 0.3s ease-out 0s;
+    -moz-transition: opacity 0.3s ease-out 0s;
+    -o-transition: opacity 0.3s ease-out 0s;
+}
+
+.button-orange:hover:before {
+    opacity: 0;
+}
+
+.button-orange:hover span {
+    color: #ff6633;
 }
 
 .button-orange:hover {
     cursor: pointer;
 }
 
+.button-orange span {
+    color: #ffffff;
+    font-family: PTSans-Bold;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.5s ease 0s;
+    -webkit-transition: color 0.5s ease 0s;
+    -moz-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+    position: relative;
+    z-index: 2;
+}
 .find-table-button {
     width: 160px;
     height: 50px;
@@ -276,8 +307,16 @@ input:focus:-ms-input-placeholder {opacity: 0;}
     left: 0;
     background-color: #000000;
     border: 1px solid #000000;
+    transition: opacity 0.4s ease 0s;
+    -webkit-transition: opacity 0.4 ease 0s;
+    -moz-transition: opacity 0.4 ease 0s;
+    -o-transition: opacity 0.4 ease 0s;
     border-radius: 5px;
     opacity: 0.7;
+}
+
+.find-table-button:hover:before {
+    opacity: 1;
 }
 
 .find-table-button:hover {
@@ -303,7 +342,7 @@ input:focus:-ms-input-placeholder {opacity: 0;}
     z-index: 2;
 }
 
-.scroll-down p {
+.scroll-down label {
     margin-bottom: 5px;
     font-family: PTSans-Regular;
     color: #ffffff;
@@ -321,6 +360,12 @@ input:focus:-ms-input-placeholder {opacity: 0;}
     font-size: 22px;
     background: none;
     border: none;
+}
+
+.scroll-down:hover label,
+.scroll-down:hover .scroll-down-button {
+    cursor: pointer;
+    color: #ff6633;
 }
 
 .scroll-down-button:focus {
