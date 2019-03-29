@@ -3,20 +3,21 @@
 
 //--------------------Events--------------------//
 
+document.getElementById("scroll-down-button").onclick = function() {
+    let y = FindPosition(document.getElementById("point_1")).y;
+    ScrollScreen(y - 100 - scrollY, 500, 120);
+}
+
 document.getElementById("see-menu-button").onclick = function () {
     let y = FindPosition(document.getElementById("point_2")).y;
-    ScrollScreen(y - 240 - scrollY, 500, 60);
+    ScrollScreen(y - 240 - scrollY, 1000, 120);
 }
 
 document.getElementById("find-table-button").onclick = function() {
     let y = FindPosition(document.getElementById("point_3")).y;
-    ScrollScreen(y -200 - scrollY, 500, 60);
+    ScrollScreen(y -200 - scrollY, 1500, 120);
 }
 
-document.getElementById("scroll-down-button").onclick = function() {
-    let y = FindPosition(document.getElementById("point_1")).y;
-    ScrollScreen(y - 100 - scrollY, 500, 60);
-}
 
 let date = document.getElementById("reservations-field-date");
 date.onfocus = function () {

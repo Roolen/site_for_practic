@@ -19,6 +19,13 @@ let chefImage = document.getElementById("chef-image");
 let kitchenImage = document.getElementById("kitchen-image");
 let meatImage = document.getElementById("meat-image");
 
+let meatOneImage = document.getElementById("meat-1");
+let meatTwoImage = document.getElementById("meat-2");
+let cakesImage = document.getElementById("cakes");
+
+let reservationBlock = document.getElementById("reservation");
+let eventsBlock = document.getElementById("events");
+
 function scrolling(e) {
     if (isFullyVisible(wineImage)) {
         wineImage.classList.add("move_left_100");
@@ -38,6 +45,31 @@ function scrolling(e) {
     if (isPartiallyVisible(meatImage)) {
         meatImage.classList.add("move_left_100");
         meatImage.style.opacity = 1;
+    }
+
+    if (isFullyVisible(meatOneImage)) {
+        meatOneImage.classList.add("move_reset");
+        meatOneImage.style.opacity = 1;
+    }
+
+    if (isFullyVisible(meatTwoImage)) {
+        meatTwoImage.classList.add("move_reset");
+        meatTwoImage.style.opacity = 1;
+    }
+
+    if (isFullyVisible(cakesImage)) {
+        cakesImage.classList.add("move_reset");
+        cakesImage.style.opacity = 1;
+    }
+
+    if (isFullyVisible(reservationBlock)) {
+        reservationBlock.classList.add("move_reset");
+        reservationBlock.style.opacity = 1;
+    }
+
+    if (isFullyVisible(eventsBlock)) {
+        eventsBlock.classList.add("move_reset");
+        eventsBlock.style.opacity = 1;
     }
 }
 

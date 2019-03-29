@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <title>Welcome to voila</title>
+    <title>Voila restaurant</title>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="image/voila.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/Style.css">
     <script async src="js/javascript.js"></script>
     <script async src="js/actionScroll.js"></script>
@@ -19,7 +20,7 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
-                            <a href="#menu-restaurant">Menu</a>
+                            <a href="#">Menu</a>
                             <div>Sit amet constetur adipisicing elit. Fugit perspiciatis.</div>
                         </li>
                         <li class="menu-list-item">
@@ -75,19 +76,19 @@
                         <button class="button-orange read-more-button" id="read-more-button" type="button"><span>Read
                             More</span></button>
                     </div>
-                    <div class="wine-image shadow_image" id="wine-image"></div>
-                    <div class="chef-image shadow_image" id="chef-image"></div>
-                    <div class="kitchen-image shadow_image" id="kitchen-image"></div>
-                    <div class="meat-image shadow_image" id="meat-image"></div>
+                    <div class="wine-image shadow_image image_transition" id="wine-image"></div>
+                    <div class="chef-image shadow_image image_transition" id="chef-image"></div>
+                    <div class="kitchen-image shadow_image image_transition" id="kitchen-image"></div>
+                    <div class="meat-image shadow_image image_transition" id="meat-image"></div>
                 </div>
             </section>
             <section class="menu-restaurant">
                 <a name="menu-restaurant"></a>
                 <div class="menu-restaurant-container">
                     <div class="menu-restaurant-images">
-                        <div class="meat-1 shadow_image"></div>
-                        <div class="meat-2 shadow_image"></div>
-                        <div class="cakes shadow_image"></div>
+                        <div class="meat-1 shadow_image image_transition" id="meat-1"></div>
+                        <div class="meat-2 shadow_image image_transition" id="meat-2"></div>
+                        <div class="cakes shadow_image image_transition" id="cakes"></div>
                     </div>
                     <div class="menu-restaurant-content" id="point_2">
                         <h2>Tasteful Italian Cuisine</h2>
@@ -113,8 +114,8 @@
                 </div>
             </section>
             <section class="reservation" name="reservation">
-                <div class="reservation-block" id="point_3">
-                    <div class="reservation-container">
+                <div class="reservation-block block_transition" id="reservation">
+                    <div class="reservation-container" id="point_3">
                         <h3>Make a Reservation</h3>
                         <form class="reservation-form">
                             <div class="reservation-field-block">
@@ -141,7 +142,7 @@
                         </form>
                     </div>
                 </div>
-                <aside class="reservation-block upcoming-events-container">
+                <aside class="reservation-block upcoming-events-container block_transition" id="events">
                     <h3>Upcoming Events</h2>
                         <section class="event">
                             <div class="event-image">
